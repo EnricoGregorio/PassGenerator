@@ -16,5 +16,10 @@ void main() {
     String upperLetters = lowerLetters.toUpperCase();
     String numbers = "0123456789";
     String symbols = "[]{};/\\\\~^´`'\\\"?:<>,.!@#$%¨&*()-_=+ç";
+    
+    String allChars = lowerLetters + upperLetters + numbers + symbols;
+    int length = 10;
 
+    String password = generatePassword(allChars, length);
+    System.out.println("Generated password: " + password);
 }
